@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Peta</string>
+    <string name="map_key" translatable="false">AIzaSyDvxUfRIQATjRwbOIWq-zjCOCtQs_FuK6U</string>
+
+    <string name="save_button">Save</string>
+    <string name="new_button">New</string>
+    <string name="delete_button">Delete</string>
+
+    <string name="save_database">Save Database</string>
+    <string name="delete_database">Delete Database</string>
+    <string name="show_marker">Tampil Marker</string>
+    <string name="first_fragment_label">Coba</string>
+    <string name="second_fragment_label">Coba</string>
+
+    <string name="jenis_marka_prompt">Choose Marka</string>
+    <string name="title_activity_lapor">lapor</string>
+    <string-array name="jenis_marka_array">
+        <item>Kebakaran</item>
+        <item>Banjir</item>
+        <item>Angin Kencang</item>
+        <item>Tanah Longsor</item>
+        <item>Abrasi</item>
+        <item>Kekeringan</item>
+        <item>Kebakaran Hutan dan Lahan</item>
+        <item>Angin Puting Beliung</item>
+
+
+    </string-array>
+
+
+</resources>

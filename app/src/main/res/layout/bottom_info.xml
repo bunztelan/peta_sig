@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@drawable/bottom_sheet"
+    android:id="@+id/bottom_sheet_container"
+
+    >
+    <TextView
+        android:id="@+id/bencana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="textEnd"
+        android:layout_toEndOf="@+id/tangal"
+        android:textColor="@color/orange"
+        android:layout_marginLeft="15dp"
+        android:text="hjhj"
+        android:layout_alignParentRight="true"></TextView>
+
+    <TextView
+        android:id="@+id/tangal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:text="0-"></TextView>
+    <TextView
+        android:id="@+id/jam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tangal"
+        android:text="-"></TextView>
+    <ImageView
+        android:id="@+id/marker"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/mark_gold"
+        android:layout_below="@+id/jam"
+        android:layout_marginTop="25dp"
+        ></ImageView>
+    <TextView
+        android:id="@+id/label_lokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lokasi Kejadian"
+        android:layout_toEndOf="@+id/marker"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/jam"></TextView>
+    <TextView
+        android:id="@+id/ket_lokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/marker"
+        android:textStyle="bold"
+        android:layout_below="@+id/label_lokasi"
+        android:layout_marginTop="5dp"
+        android:text="-"
+        ></TextView>
+
+    <ImageView
+        android:id="@+id/icon_penyebab"
+        android:layout_width="50dp"
+        android:src="@drawable/ic_round_contact_support_24"
+        android:layout_below="@+id/marker"
+        android:layout_marginTop="25dp"
+        android:layout_height="50dp"></ImageView>
+
+    <TextView
+        android:id="@+id/label_penyebab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Penyebab Kejadian"
+        android:layout_toEndOf="@+id/icon_penyebab"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/marker"></TextView>
+    <TextView
+        android:id="@+id/ket_penyebab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/marker"
+        android:textStyle="bold"
+        android:layout_below="@+id/label_penyebab"
+        android:layout_marginTop="5dp"
+        android:text="-"
+        ></TextView>
+
+    <ImageView
+        android:id="@+id/icon_upaya"
+        android:layout_width="50dp"
+        android:src="@drawable/ic_baseline_policy_24"
+        android:layout_below="@+id/ket_penyebab"
+        android:layout_marginTop="25dp"
+        android:layout_height="50dp"></ImageView>
+
+    <TextView
+        android:id="@+id/label_upaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upaya Yang Dilakukan"
+        android:layout_toEndOf="@+id/icon_penyebab"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/ket_penyebab"></TextView>
+    <TextView
+        android:id="@+id/ket_upaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/marker"
+        android:textStyle="bold"
+        android:layout_below="@+id/label_upaya"
+        android:layout_marginTop="5dp"
+        android:text="-"
+        ></TextView>
+
+    <ImageView
+        android:id="@+id/icon_kerugian"
+        android:layout_width="50dp"
+        android:src="@drawable/ic_baseline_mood_bad_24"
+        android:layout_below="@+id/ket_upaya"
+        android:layout_marginTop="25dp"
+        android:layout_height="50dp"></ImageView>
+
+    <TextView
+        android:id="@+id/label_kerugian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kerugian Dan Akibat Yang Terjadi"
+        android:layout_toEndOf="@+id/icon_penyebab"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/ket_upaya"></TextView>
+    <TextView
+        android:id="@+id/ket_kerugian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/marker"
+        android:textStyle="bold"
+        android:layout_below="@+id/label_kerugian"
+        android:layout_marginTop="5dp"
+        android:text="-"
+        ></TextView>
+</RelativeLayout>
