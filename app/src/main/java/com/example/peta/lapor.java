@@ -66,6 +66,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
+
 public class lapor extends AppCompatActivity implements OnMapReadyCallback, DatePickerDialog.OnDateSetListener, TimePickerDialog.OnTimeSetListener {
 
     private AutoCompleteTextView jenisBencanaDropdown;
@@ -168,7 +170,7 @@ public class lapor extends AppCompatActivity implements OnMapReadyCallback, Date
 
                 @Override
                 public void onSuccess(Context context, UploadInfo uploadInfo, ServerResponse serverResponse) {
-                    uploading = false;
+                      uploading = false;
                     Log.d("uploader", serverResponse.getBodyString());
                     Toast.makeText(lapor.this, "Upload file sukses " + serverResponse.getBodyString(), Toast.LENGTH_LONG).show();
                     Gson gson = new Gson();
@@ -208,10 +210,19 @@ public class lapor extends AppCompatActivity implements OnMapReadyCallback, Date
                 response -> {
                     // response
                     Log.d("Response", response);
+                    new SweetAlertDialog(this, SweetAlertDialog.SUCCESS_TYPE)
+                            .setTitleText("Laporan Diterima!")
+                            .setContentText("laporan telah berhasil diterima, Terima kasih atas laporan anda")
+                            .show();
+                    finish();
                 },
                 error -> {
                     // error
                     Log.d("Error.Response",error.getMessage());
+                    new SweetAlertDialog(this, SweetAlertDialog.ERROR_TYPE)
+                            .setTitleText("Laporan Gagal Dikirim!")
+                            .setContentText("Laporan tidak berhasil kami terima, coba beberapa saat lg")
+                            .show();
                 }
         ) {
 
