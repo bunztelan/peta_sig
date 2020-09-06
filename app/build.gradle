@@ -54,6 +54,8 @@ dependencies {
     implementation "net.gotev:uploadservice:4.4.0"
     // java serializer & de-serializer
     implementation 'com.google.code.gson:gson:2.8.6'
+    // sweet dialog
+    implementation 'cn.pedant.sweetalert:library:1.3'
 
     testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
